@@ -26,10 +26,7 @@ const Nweet = ({nweetObj,isOwner}) => {
     };
     return (
         <div>
-            {editing ?  <form onSubmit={onSubmit}>
-                            <input type="text" placeholder="Edit your nweet" value={newNweet} required onChange={onChange}/>
-                            <input type="submit" value="Update Nweet"></input>
-                        </form> 
+            {editing ?  
                      : <> <h4>{nweetObj.text}</h4>
                 {isOwner && (
                     <>

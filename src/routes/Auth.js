@@ -49,7 +49,7 @@ const Auth = () =>{
         } else if(name ==="github"){
             provider = new firebaseInstance.auth.GithubAuthProvider();
         }
-        const data = await authService.signInWithPopup(provider);
+        const data = await authService.signInWithPopup(provider); 
 
     };
     // input 태그 안의 onchange 속성은 값이 바뀔때마다 onChange 함수를 호출한다는 것을 의미한다.

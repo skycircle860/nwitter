@@ -77,8 +77,7 @@ const NweetFactory = ({ userObj }) => {
           opacity: 0,
         }}
       />
-      <input type="file" accept="image/*" onChange={onFileChange} />
-      <input type="submit" value="Nweet" />
+     
       {attachment && (
         <div className="factoryForm__attachment">
             <img
